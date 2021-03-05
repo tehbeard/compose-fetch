@@ -1,4 +1,3 @@
-import { ComposedFetchFnFactory } from '@tehbeard/compose-fetch'
 /**
  * Compose takes a set of functions for transforming an input and returns a single function
  * Composition is applied right to left
@@ -13,7 +12,7 @@ import { ComposedFetchFnFactory } from '@tehbeard/compose-fetch'
 
 type ComposeFn<T extends Function> = (...fn: T[]) => T
 
-export const compose:ComposeFn<ComposedFetchFnFactory> = (...fn) => {
+export const composeFetch:ComposeFn<ComposedFetchFnFactory> = (...fn) => {
     if (fn.length == 0) {
         return s => s;
     }
