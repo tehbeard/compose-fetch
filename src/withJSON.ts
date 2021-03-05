@@ -1,4 +1,4 @@
-import { ComposedFetchFnFactory } from "@tehbeard/compose-fetch";
+import { ComposedFetchFnFactory } from "./index";
 /**
  * Parse JSON body
  * @param {*} fetch 

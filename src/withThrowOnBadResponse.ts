@@ -1,4 +1,4 @@
-import { ComposedFetchFnFactory } from "@tehbeard/compose-fetch";
+import { ComposedFetchFnFactory } from "./index";
 
 /**
  * When a non OK response is given, trigger a throw with the resp so we know how to handle it

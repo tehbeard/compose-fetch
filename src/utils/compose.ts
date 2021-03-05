@@ -10,6 +10,8 @@
  * @param  {...any} fn
  */
 
+import { ComposedFetchFnFactory } from "../index";
+
 type ComposeFn<T extends Function> = (...fn: T[]) => T
 
 export const composeFetch:ComposeFn<ComposedFetchFnFactory> = (...fn) => {

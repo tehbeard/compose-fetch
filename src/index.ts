@@ -1,5 +1,4 @@
-declare module "@tehbeard/compose-fetch" {
-  export type ComposedRequestInit = Omit<RequestInit, "body"> & {
+export type ComposedRequestInit = Omit<RequestInit, "body"> & {
     body: BodyInit | Object;
   }; //Override body to allow objects
 
@@ -11,4 +10,9 @@ declare module "@tehbeard/compose-fetch" {
   export type ComposedFetchFnFactory = (
     fetch: ComposedFetchFn
   ) => ComposedFetchFn;
-}
+
+export * from './utils/compose';
+export * from './withBaseURL';
+export * from './withHeaders';
+export * from './withJSON';
+export * from './withThrowOnBadResponse';

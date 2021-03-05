@@ -1,4 +1,4 @@
-import { ComposedFetchFnFactory, ComposedRequestInit } from "@tehbeard/compose-fetch";
+import { ComposedFetchFnFactory, ComposedRequestInit } from "./index";
 
 type AdditionalHeaders = HeadersInit | ((url: RequestInfo, init: ComposedRequestInit) => HeadersInit);
 
