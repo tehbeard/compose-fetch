@@ -1,0 +1,19 @@
+{
+  "name": "@tehbeard/compose-fetch",
+  "version": "0.0.1",
+  "description": "A set of composable functions for building HTTP clients atop the fetch(...) function in browsers.",
+  "main": "dist/index.js",
+  "type": "module",
+  "keywords": [
+    "fetch"
+  ],
+  "scripts": {
+    "build": "rimraf dist/* && tsc"
+  },
+  "author": "Tehbeard",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.3"
+  }
+}
