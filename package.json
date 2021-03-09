@@ -2,7 +2,7 @@
   "name": "@tehbeard/compose-fetch",
   "version": "0.0.1",
   "description": "A set of composable functions for building HTTP clients atop the fetch(...) function in browsers.",
-  "main": "dist/index.js",
+  "module": "dist/index.js",
   "type": "module",
   "keywords": [
     "fetch"
